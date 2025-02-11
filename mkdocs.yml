@@ -1,0 +1,31 @@
+site_name: ZuluDocs
+
+nav:
+  - Introduction: index.md
+  - First Program: helloworld.md
+  - Constants: constants.md
+  - Type Casting: casting.md
+  - Operators: operators.md
+  - Variables: variables.md
+  - Conditionals: conditionals.md
+  - Pattern Matching: match.md
+  - Functions: functions.md
+  - About: help.md
+
+
+theme: readthedocs
+
+markdown_extensions:
+  - pymdownx.highlight  # Enables syntax highlightinguse_pygments
+  - pymdownx.superfences  # Required for code blocks with multiple languages
+  - pymdownx.inlinehilite  # Allows inline code highlighting
+  - pymdownx.extra  # Adds extra Markdown capabilitie
+
+    
+extra_javascript:
+  - assets/js/highlight.min.js
+  - assets/js/zulu.js
+
+extra:
+  custom_dir: docs
+
