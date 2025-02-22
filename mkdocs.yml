@@ -10,10 +10,12 @@ nav:
   - Conditionals: conditionals.md
   - Pattern Matching: match.md
   - Functions: functions.md
+  - Structs: structs.md
   - About: help.md
 
 
 theme: readthedocs
+
 
 markdown_extensions:
   - pymdownx.highlight  # Enables syntax highlightinguse_pygments
