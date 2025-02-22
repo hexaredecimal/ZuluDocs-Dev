@@ -19,4 +19,4 @@ Zulu is a small, interpreted programming language that blends functional and imp
 
 
 ## Who is it for?
-Whether you're a hobbyist, a functional programming enthusiast, a systems programmer looking for a flexible scripting tool, or someone who enjoys experimenting with new languages, [Your Language Name] provides a refreshing approach to code structure and execution.
+Whether you're a hobbyist, a functional programming enthusiast, a systems programmer looking for a flexible scripting tool, or someone who enjoys experimenting with new languages, Zulu provides a refreshing approach to code structure and execution.

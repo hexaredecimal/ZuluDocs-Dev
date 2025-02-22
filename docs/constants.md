@@ -42,6 +42,13 @@ be modified and displayed. String are immutable in Zulu, operations such as conc
 "Hello"
 "This is a string"
 ```
+String can also be interpolated with other expressions from within their 
+definition. 
+
+```zulu
+"${a} + ${b} = ${a + b}"
+```
+
 ## List
 The list constant allows use to store values of any type in a single storage unit. The list constant is declared in side the `[]` symbols. 
 
