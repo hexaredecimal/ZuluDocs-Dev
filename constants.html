@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Constants - ZuluDocs</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Constants";
+        var mkdocs_page_input_path = "constants.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> ZuluDocs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="helloworld.html">First Program</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Constants</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#atoms">Atoms</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#defining-atoms">Defining atoms</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nil">:Nil</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#true-and-false">:True and :False</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#numbers">Numbers</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#strings">Strings</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#list">List</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#map">Map</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tuple">Tuple</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="casting.html">Type Casting</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="operators.html">Operators</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="conditionals.html">Conditionals</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="match.html">Pattern Matching</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="functions.html">Functions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="structs.html">Structs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="help.html">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ZuluDocs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Constants</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="zulu-language-constants">Zulu language constants</h1>
+<h2 id="atoms">Atoms</h2>
+<p>The most basic constant in Zulu is the atom constant. Atoms are named (or symbolic) constants, such that 
+their name is their value. They are preceded with a leading <code>:</code>. </p>
+<h3 id="defining-atoms">Defining atoms</h3>
+<p>Atoms are defined by a leading <code>:</code> and a series of letters, digits and underscores (<code>_</code>).</p>
+<div class="highlight"><pre><span></span><code>:hello :world 
+:atom_too :year_2025
+</code></pre></div>
+<p>There are atoms that are special as they used to mark the absence of values and returned as the result
+of boolean expressions. These atoms are <code>nil</code>, <code>true</code> and <code>false</code>. </p>
+<h3 id="nil">:Nil</h3>
+<p>The <code>:nil</code> atom is used as a value that stands in place of the absent value.</p>
+<h3 id="true-and-false">:True and :False</h3>
+<p>The <code>:true</code> and <code>:false</code> atoms are returned as the result of boolean expressions such as comparing two numbers, etc.</p>
+<p>All atoms even special atoms can be created by the programmer, even though some of them are also created by the 
+interpreter at runtime. </p>
+<h2 id="numbers">Numbers</h2>
+<p>The second most basic constant in Zulu is the number. Numbers are used in mathematical expressions to compute values at runtime. 
+Numbers can be both integer and decimal as they are not different at runtime. Numbers can contain <code>_</code> as a visual separator.</p>
+<div class="highlight"><pre><span></span><code>200
+50.5
+600_500
+</code></pre></div>
+<h2 id="strings">Strings</h2>
+<p>The third basic constant is the string constant. Strings are enclosed inside <code>" "</code>. String allow us to have values that represent text that can
+be modified and displayed. String are immutable in Zulu, operations such as concatination create a new string internally.</p>
+<p><div class="highlight"><pre><span></span><code>&quot;Hello&quot;
+&quot;This is a string&quot;
+</code></pre></div>
+String can also be interpolated with other expressions from within their 
+definition. </p>
+<div class="highlight"><pre><span></span><code>&quot;${a} + ${b} = ${a + b}&quot;
+</code></pre></div>
+<h2 id="list">List</h2>
+<p>The list constant allows use to store values of any type in a single storage unit. The list constant is declared in side the <code>[]</code> symbols. </p>
+<div class="highlight"><pre><span></span><code>[3, 5, 6, 7, 8]
+[:one, :two, 3, &quot;four&quot;, 5]
+</code></pre></div>
+<h2 id="map">Map</h2>
+<p>The map constant is a reference constant that allows us to associate a key with a value. The map is declared like this:
+<div class="highlight"><pre><span></span><code>&amp;{&quot;Hello&quot; -&gt; &quot;World&quot;, :one -&gt; 4}
+</code></pre></div>
+The <code>&amp;</code> symbol is the reference symbol, this is because maps are reference types by default. More on references in the coming chapters</p>
+<h2 id="tuple">Tuple</h2>
+<p>Tuples are used to store multiple items in a single variable. Tuples are similar to lists. They are declared using the <code>()</code> symbols. For a value to 
+be a tuple it must have multiple values inside the <code>()</code> symbols, else it becomes are group expressions. 
+<div class="highlight"><pre><span></span><code>(:hello, :nil)
+(&quot;Hello&quot;, &quot;World&quot;)
+</code></pre></div></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="helloworld.html" class="btn btn-neutral float-left" title="First Program"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="casting.html" class="btn btn-neutral float-right" title="Type Casting">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="helloworld.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="casting.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="assets/js/highlight.min.js"></script>
+      <script src="assets/js/zulu.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
